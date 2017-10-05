@@ -1,6 +1,6 @@
-# Primeira Semana do Curso de Front-End Msstertech
+# Projetos do Curso de Front-End Msstertech
 
-## Web Básica
+## Primeiro projeto em HTML do curso de Front-End Mastertech
 
 Aqui você irá encontrar todos os códigos realizados em sala de aula como referência para estudar em casa.
 
