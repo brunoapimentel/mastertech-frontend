@@ -1,3 +1,4 @@
+/*Elementos*/
 body{
     margin: 0;
 }
@@ -5,21 +6,6 @@ body{
 h1{
     text-align: center;
     font-size: 55px;
-}
-
-/* Macete para alinhar uma imagem no centro */
-.banner{
-    width: 90%;
-    margin: auto;
-    display: block;
-}
-
-.margin{
-    margin: 0 5%;
-}
-
-#imagem-cdhu{
-    border: 1px solid red;
 }
 
 section{
@@ -49,6 +35,18 @@ footer{
     font-size: 10px;
 }
 
+/*Classes*/
+/* Macete para alinhar uma imagem no centro */
+.banner{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.margin{
+    margin: 0 5%;
+}
+
 .modal{
   width: 50%;
   border: 1px solid gray;
@@ -60,4 +58,9 @@ footer{
   border-radius: 25px;
   font-size: 23px;
   display: none;
+}
+
+/*ID*/
+#imagem-cdhu{
+    border: 1px solid red;
 }
