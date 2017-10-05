@@ -1,0 +1,82 @@
+/*Elementos*/
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 55px;
+  text-align: center;
+}
+
+section {
+  text-align: justify;
+}
+
+input, textarea {
+  font-size: 16px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 4px 10px;
+  resize: none;
+  border: 1px solid gray;
+  border-radius: 10px;
+}
+
+input {
+  height: 29px;
+}
+
+button {
+  font-size: 16px;
+  padding: 7px 25px;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+}
+
+/*Classes*/
+
+/* Macete para alinhar uma imagem no centro */
+
+.banner {
+  display: block;
+  width: 90%;
+  margin: auto auto 10px;
+  border-radius: 8px;
+}
+
+.margin {
+  margin: 0 5%;
+}
+
+.modal {
+  text-align: center;
+  font-size: 23px;
+  position: fixed;
+  top: 100px;
+  left: 25%;
+  display: none;
+  width: 50%;
+  padding: 2%;
+  border: 1px solid gray;
+  border-radius: 25px;
+  background-color: white;
+}
+
+/*ID*/
+
+#imagem-cdhu {
+  border: 1px solid red;
+}
+
+/*Nested*/
+
+.modal button {
+  background-color: brown;
+}

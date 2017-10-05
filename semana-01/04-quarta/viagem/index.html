@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Conheça Carapicuíba</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <header>
+    <h1 onclick="mudarTitulo()">Destino Turístico: Carapicuíba</h1>
+    <img class="banner" src="images/calcadao.jpg">
+  </header>
+
+  <section class="margin">
+    <h2>Sobre a cidade</h2>
+    <p onclick="mudarTexto()">
+      Before the first white man arrived, the region which today is Carapicuíba was inhabited by indigenous people. The hamlet was founded by José de Anchieta. Afonso Sardinha settled there with his farm with the will to use the indigenous people as a workforce.
+      He then built a chapel. The indigenous people soon reacted to the European occupation, and rushed into the jungle. By the 17th century, it was part of the recently created municipality of Santana do Parnaíba. Nothing much has changed in the hamlet
+      during this century and the most of the 18th one. From 1770 on, however, the city and its surroundings started to change noticeably, as new villages were settled, like Embu and Cotia. Houses were built around the main chapel, in which several "entrepreneur"
+      (actually, people who arranged the parties with folklore-related themes) lived. Until the Sorocabana Railway was implemented, in 1870, little was developed in the village. However, when a station was opened near the section of the tracks that run
+      through the city, many people started to live in the city. During the first half of the 20th century, agriculture started to play a role in the economy of the village, because of the climate and quality of the land. A bus line starting in Barueri,
+      running through Carapicuíba, Osasco and ending in Pinheiros was created to take people to São Paulo in alternate itineraries. In 1948, Carapicuíba became a district of Cotia, when it became independent from São Paulo. A year later, it became part
+      of Barueri, also as a district. In 1952 the Parish Nossa Senhora Aparecida was built, and is now known as "Igreja Amarela" (Yellow Church), and the city population kept on increasing. The post-war times saw the vertiginous decrease of the prospecting
+      in Minas Gerais, which led a large number of people to go to São Paulo state, a number of them settling in the city. In the early 1960s, a movement in favor of the independence of Carapicuíba was led by the mayor of Barueri, Carlos Capriotti, and
+      the district earned its city status in March 1965 In 2007-2008, the city gained national attention due to the Paturis Park murders.
+    </p>
+  </section>
+
+  <section class="margin">
+    <h2>Fotos da Cidade</h2>
+    <img class="banner" src="images/cdhu.jpg" id="imagem-cdhu">
+    <img class="banner" src="images/piscina.jpg">
+    <img class="banner" src="images/praca.jpg">
+  </section>
+
+  <section class="margin">
+    <form method="post">
+      <input type="text" placeholder="Nome">
+      <input type="text" placeholder="E-mail">
+      <textarea rows="8" placeholder="Mensagem"></textarea>
+      <button type="button" onclick="alternarModal()">Enviar</button>
+    </form>
+  </section>
+
+  <footer class="margin">
+    <p>Copyright @ 2017</p>
+  </footer>
+
+  <!-- A estrutura do modal é definida aqui -->
+  <div class="modal">
+    <p>Obrigado por enviar seu contato.</p>
+    <p>Entraremos em contato em breve :)</p>
+    <button onclick="alternarModal()">OK</button>
+  </div>
+
+  <script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
