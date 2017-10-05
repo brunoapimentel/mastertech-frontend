@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 55px;
+}
+
+/* Macete para alinhar uma imagem no centro */
+.banner{
+    width: 90%;
+    margin: auto;
+    display: block;
+}
+
+.margin{
+    margin: 0 5%;
+}
+
+#imagem-cdhu{
+    border: 1px solid red;
+}
+
+section{
+    text-align: justify;
+}
+
+input, textarea{
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  resize: none;
+}
+
+input{
+  height: 29px;
+}
+
+button{
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  color: white;
+  padding: 7px 25px;
+}
+
+footer{
+    font-size: 10px;
+}
+
+.modal{
+  width: 50%;
+  border: 1px solid gray;
+  position: fixed;
+  left: 25%;
+  top: 100px;
+  background-color: white;
+  padding: 2%;
+  border-radius: 25px;
+  font-size: 23px;
+  display: none;
+}
