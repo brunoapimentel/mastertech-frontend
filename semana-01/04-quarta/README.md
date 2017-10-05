@@ -1,4 +1,4 @@
-# 03 - HTML, CSS e JS Basico - Parte 2
+# 03 - HTML, CSS e JS Básico - Parte 2
 
 ### Extensão do primeiro projeto em HTML, CSS e JS do curso de Front-End Mastertech
 

@@ -1,4 +1,4 @@
-# 02 - HTML, CSS e JS Basico
+# 02 - HTML, CSS e JS Básico
 
 ### Primeiro projeto em HTML, CSS e JS do curso de Front-End Mastertech
 

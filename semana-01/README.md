@@ -1,4 +1,4 @@
-# Primeira Semana do Curso de Front-End Msstertech
+# Primeira Semana do Curso de Front-End Mastertech
 
 ## Web Básica
 

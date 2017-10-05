@@ -1,4 +1,4 @@
-# Projetos do Curso de Front-End Msstertech
+# Projetos do Curso de Front-End Mastertech
 
 ## Primeiro projeto em HTML do curso de Front-End Mastertech
 
