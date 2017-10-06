@@ -1,0 +1,36 @@
+<script type="text/javascript">
+  function impares() {
+    //Inicia um array
+    let numeros = [10, 21, 2, 5, 7];
+
+    for (let numero of numeros) {
+      if (numero % 2 != 0) {
+        // console.log('O número ' + numero + ' é impar');
+        console.log(`O número ${numero} é impar`);
+      }
+    }
+  }
+
+  function soma() {
+    let numeros = [10, 21, 2, 5, 7];
+    let acumulador = 0;
+    // repete todos os números do array de forma sequencial
+    for (let numero of numeros) {
+      // Soma a variavel acumulador à variável numero e atribui a soma final na variável acumulador
+      acumulador += numero;
+    }
+    console.log(acumulador);
+  }
+
+  function maior() {
+    let numeros = [90, 10, 21, 2, 72, 5, 7];
+
+    let maior = 0;
+    for (let numero of numeros) {
+      if (maior < numero) {
+        maior = numero;
+      }
+    }
+    console.log(maior);
+  }
+</script>

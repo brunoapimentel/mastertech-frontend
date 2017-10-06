@@ -12,6 +12,8 @@ Aqui você irá encontrar todos os códigos realizados em sala de aula como refe
 
 * [Color Picker](https://www.google.com.br/search?q=color+picker)
 
+* [Roadmap com as últimas tendências em desenvolvimento web para 2017](https://github.com/kamranahmedse/developer-roadmap)
+
 ### Plugins para o Atom
 
 * **atom-beautify**

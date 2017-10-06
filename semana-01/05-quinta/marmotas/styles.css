@@ -1,0 +1,69 @@
+body {
+  margin: 0;
+  font-family: 'Indie Flower', cursive;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner h1 {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  color: white;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  position: relative;
+  width: 33.33%;
+  margin-top: -4px;
+}
+
+.grid div img {
+  width: 100%;
+}
+
+.grid div p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+}
+
+/*@media(max-width: 600px)define regras para aparelhos com o display menor que 600px*/
+
+@media(max-width: 600px) {
+  .banner div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    top: 0;
+    opacity: 0.6;
+  }
+  .grid {
+    display: block;
+  }
+  .grid div {
+    width: 100%;
+  }
+  .banner h1 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+  }
+}
