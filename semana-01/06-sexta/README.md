@@ -70,8 +70,6 @@ Usem o media queries
 
 ## Quer ir além?
 
-* Crie uma conta no GitHub e plublique seu projeto
+* Crie uma conta no [GitHub] (https://github.com/) e plublique seu projeto
 
 * Lembre de fazer uma cópia antes, só por segurança!
-
-[https://github.com/]
