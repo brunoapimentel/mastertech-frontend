@@ -6,7 +6,7 @@ Revisão dos conceitos de CSS e JS e início do projeto.
 
 ## Dicas para o CSS
 
-Utilizem várias classes em uma mesma tag
+* Utilizem várias classes em uma mesma tag
 
 ```
 //HTML
@@ -22,7 +22,7 @@ Utilizem várias classes em uma mesma tag
   margin: 0 15%;
 }
 ```
-Abusem do border radius
+* Abusem do border radius
 
 ```
 //HTML
@@ -44,7 +44,7 @@ Abusem do border radius
 }
 ```
 
-Usem o media queries
+* Usem o media queries
 
 ```
 @media(max-width: 1024px) and (min-width: 700px){
