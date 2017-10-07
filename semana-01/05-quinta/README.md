@@ -30,7 +30,7 @@ Aprofundamos o conhecimento em CSS e JS puro.
 
 * Clona o diretório
 
-`git clone https://github.com/brunoapimentel/mastertech-front-end-2017`
+`git clone https://github.com/brunoapimentel/mastertech-frontend.git`
 
 * Baixa as atualizações do servidor e replica para o projeto atualiza
 
