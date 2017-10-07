@@ -1,4 +1,4 @@
-# 04 - CSS e JS Básico - Parte 3
+# 05 - CSS e JS Básico - Parte 3
 
 ### Aprimoramento nas técnicas de CSS e JS do curso de Front-End Mastertech
 

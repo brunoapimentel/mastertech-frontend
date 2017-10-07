@@ -1,4 +1,4 @@
-# 01 - HTML Básico
+# 02 - HTML Básico
 
 ### Primeiro projeto em HTML do curso de Front-End Mastertech
 
