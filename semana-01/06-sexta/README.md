@@ -78,8 +78,6 @@ function defineNome(){
 }
 ```
 
-OU
-
 ES6
 ```
 const defineNome = () => {
