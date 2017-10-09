@@ -1,24 +1,15 @@
-/*adicionei o display flex na classe pai, no caso o .grid (que é a section)*/
+/* Adicionei o display flex na classe pai, no caso o .grid (que é a section) */
+
+/*Por padrão o display: flex coloca tudo na mesma linha no caso as 3 divs*/
 
 .grid {
   display: flex;
 }
 
+/* Define o tamanho de cada imagem dentro da div */
+
+/*E aqui embaixo definimos que cada imagem terá 100% de largura em cada div*/
+
 .grid div img {
   width: 100%;
 }
-
-/*declaro que cada div dentro da section terá 33,33% de largura*/
-
-/* .grid div{
-  width: 33,33%;
-}
- */
-
-/*declaro que as imagens que estão dentro da div manterão seu aspecto original, ou seja, terão 100% do tamanho da imagem mas na verdade será 100% de 33,33% pois estão dentro da div*/
-
-/*
-.grid div img{
-  width: 100%;
-  height: 100%;
-} */
