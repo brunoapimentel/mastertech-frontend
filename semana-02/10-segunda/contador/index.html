@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Contador</title>
+</head>
+
+<body>
+
+  <div>0</div>
+  <div>0</div>
+  <div>0</div>
+
+  <script type="text/javascript">
+    // Importa os elementos do HTML
+    let divs = document.querySelectorAll('div');
+
+    // Faz um loop para passar cada valor do array para 1 div
+    for (div of divs) {
+
+      // Espera por um clique em uma das divs
+      div.addEventListener('click', (event) => {
+
+        // Soma 1 dentro do elemento clicado
+        event.target.innerHTML++
+      })
+    }
+  </script>
+</body>
+
+</html>

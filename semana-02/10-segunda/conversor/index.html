@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Conversão</title>
+</head>
+
+<body>
+  <h2>Digite o valor em reais</h2>
+  <input type="text">
+  <h3>Veja abaixo o resultado da conversão em dollar:</h3>
+  <p></p>
+
+  <script type="text/javascript">
+    // Importa os elementos do HTML
+    const input = document.querySelector('input')
+    const p = document.querySelector('p')
+
+    // Fica escutando por evento de digitanção no input
+    input.addEventListener('keyup', (event) => {
+
+      // Declara o valor do dollar
+      let dollar = 3.1883;
+
+      // Pega o valor digitado Multiplica pelo dollar e atribui na tag p
+      p.innerHTML = event.target.value * dollar;
+
+    })
+  </script>
+</body>
+
+</html>
