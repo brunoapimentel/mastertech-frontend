@@ -1,0 +1,33 @@
+@charset "UTF-8";
+/* SASS referente a página index.html */
+#main {
+  background-image: url(../../img/home/cover.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; }
+
+#main h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  max-width: 650px;
+  padding-left: 2rem;
+  color: #fff; }
+
+#cursos a:hover {
+  opacity: 0.7; }
+
+#contact {
+  margin-top: 12vh; }
+  #contact textarea {
+    resize: none; }
+  #contact button {
+    margin: 0 40%; }
+
+#maps {
+  width: 80%;
+  margin: -10vh 13vh; }
+  @media (max-width: 991px) {
+    #maps {
+      display: none; } }
+
+/*# sourceMappingURL=styles.css.map */
