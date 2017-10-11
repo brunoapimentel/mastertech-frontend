@@ -1,0 +1,88 @@
+<!--
+EX: Vitrine de Formas Geométricas
+
+1-  Fazer com que seja exibida apenas uma forma geométrica por vez, e que
+    a cada 0,5 segundo, ela seja trocada para uma próxima forma.
+
+    Ao esgotar as formas, deve-se voltar para a primeira;
+
+2-  Fazer com que o nome de cada forma seja exibido corretamente;
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Vitrines</title>
+</head>
+<body>
+<style>
+section div{
+    width: 200px;
+    height: 200px;
+}
+
+section div.quadrado{
+    background-color: blue;
+}
+
+section div.circulo{
+    background-color: red;
+    border-radius: 100%;
+}
+
+section div.triangulo{
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+
+    border-bottom: 200px solid yellow;
+}
+</style>
+
+<section>
+    <div class="quadrado"></div>
+    <div class="circulo"></div>
+    <div class="triangulo"></div>
+    <p></p>
+</section>
+
+<script>
+const formas = document.querySelectorAll('section div');
+const p = document.querySelector('section p');
+const nomes = ['Quadrado', 'Círculo', 'Triângulo'];
+let formaAtiva = 0;
+
+function ocultarFormas(){
+    for(let forma of formas){
+        forma.style.display = 'none';
+    }
+}
+
+function exibirFormaAtiva(){
+    formas[formaAtiva].style.display = 'block';
+}
+
+function exibirNome(){
+    p.innerHTML = nomes[formaAtiva];
+}
+
+setInterval(() => {
+    formaAtiva++;
+
+    if(formaAtiva >= formas.length){
+        formaAtiva = 0;
+    }
+
+    ocultarFormas();
+    exibirFormaAtiva();
+    exibirNome();
+
+}, 500);
+
+ocultarFormas();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!--
+    EX: Buscar Convidados
+
+    -   Ao clicar no botão buscar, exibir apenas os convidados que tenham
+        o nome correspondente a busca
+
+    DICA:   usar a função search da string.
+            a busca é case-sensitive!
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Lista</title>
+    </head>
+    <body>
+        <style>
+            #lista{
+                font-family: sans-serif;
+                font-size: 30px;
+                padding: 0 20%;
+                list-style-type: none;
+            }
+
+            #lista li{
+                padding: 10px 30px;
+                cursor: pointer;
+                border-bottom: 1px solid #aaa;
+                width: 100%;
+                color: white;
+                background-color: #77f;
+            }
+
+            .controles input{
+                height: 30px;
+                font-size: 20px;
+            }
+
+            .controles button{
+                height: 30px;
+                padding: 5px;
+                color: white;
+                font-size: 18px;
+                border: 0;
+                background-color: #8f8;
+            }
+        </style>
+
+        <div class="controles">
+            <input type="text" id="input-busca">
+            <button>Buscar</button>
+        </div>
+
+
+        <ul id="lista"></ul>
+
+        <script>
+            const convidados = [
+                {nome: "Bob Sponja", idade: 20},
+                {nome: "Freddie Mercury", idade: 42},
+                {nome: "James Bond", idade: 50},
+                {nome: "Michael Scott", idade: 46},
+                {nome: "Peter Parker", idade: 21},
+                {nome: "Dave Mustaine", idade: 62},
+                {nome: "Ed Sheeran", idade: 28},
+                {nome: "Jon Snow", idade: 16},
+                {nome: "Pikachu da Silva", idade: 12}
+            ];
+        </script>
+    </body>
+</html>

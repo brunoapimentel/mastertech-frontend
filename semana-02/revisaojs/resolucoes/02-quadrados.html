@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Quadrados</title>
+    </head>
+    <body>
+        <style media="screen">
+            body{
+                margin: 0;
+            }
+
+            section{
+                width: 100%;
+                display: flex;
+            }
+
+            section div{
+                width: 10%;
+                height: 20vh;
+                background-color: #123456;
+            }
+        </style>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <section>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </section>
+
+        <script type="text/javascript">
+            const quadrados = document.querySelectorAll('section div');
+
+            for(let quadrado of quadrados){
+                quadrado.addEventListener('click', (event) => {
+                    if(event.target.style.opacity == 0){
+                        event.target.style.opacity = 1;
+                    }else{
+                        event.target.style.opacity = 0;
+                    }
+                });
+
+                // preenche a propriedade no JS para evitar erros na
+                // funç±ao de clique
+                quadrado.style.opacity = 1;
+            }
+        </script>
+    </body>
+</html>
