@@ -7,9 +7,11 @@ O Project Mastertech é um template que será utilizado para aplicar as técnica
 * Converte o input para o output
 
 Exemplo
+
 `sass input.scss output.css`
 
 Code
+
 `sass assets/_pre/sass/main.scss assets/css/styles.css`
 
 * Mantêm o processo de conversão ativo utilizando os caminhos relativos
