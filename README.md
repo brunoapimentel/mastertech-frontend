@@ -6,6 +6,8 @@ Aqui você irá encontrar todos os códigos realizados em sala de aula como refe
 
 ## Dicas
 
+* [Live - Estrutura de Projetos Front-End](https://www.facebook.com/mastertech.tech/videos/1743943105907692/)
+
 ### Links de referência
 
 * [W3C Schools](https://www.w3schools.com/)
