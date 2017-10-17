@@ -1,0 +1,21 @@
+$blue: #47a3ba;
+$medium-blue: #a0bf33;
+$cyan: #a2d4db;
+$yellow: #fab92b;
+$purple: #80529d;
+$gray: #a0a0a0;
+$green: #a0bf33;
+$red: #d858a3;
+$light-gray: #f8f9fa;
+$dark-gray: #343a40;
+
+$theme-colors: (
+  primary: $blue,
+  secondary: $gray,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  // light: $light-gray,
+  // dark: $dark-gray
+);

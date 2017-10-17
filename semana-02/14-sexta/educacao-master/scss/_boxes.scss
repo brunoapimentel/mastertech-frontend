@@ -1,0 +1,46 @@
+.main{
+
+    .linha-boxes{
+        padding-top: 40px;
+
+        .box-quantidade{
+            width: 100%;
+            height: 300px;
+            background-color: $purple;
+        }
+
+        .calendario{
+            width: 100%;
+            background-color: $yellow;
+            color: white;
+            padding-top: 10px;
+
+            .mes{
+                font-size: $size-20;
+                color: $blue;
+                text-align: center;
+            }
+
+            .dias-semana, .semana{
+                display: flex;
+                text-align: center;
+                padding: 8px 0;
+
+                span{
+                    width: 14%;
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            .dias-semana{
+              font-size: $size-14;
+            }
+
+            .semana{
+                font-size: $size-18;
+                font-weight: bold;
+            }
+        }
+    }
+}

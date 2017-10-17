@@ -1,0 +1,29 @@
+// Overrides
+@import "colors";
+
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Open Iconic
+$icon-font-path: 'node_modules/open-iconic/font/fonts/';
+@import "../node_modules/open-iconic/font/css/open-iconic-bootstrap.scss";
+
+// Variáveis do projeto
+@import "fonts";
+
+// Elements
+@import "sidebar";
+@import "header";
+@import "boxes";
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to right, $blue 50%, white 50%);
+
+    // Truque para colocar a imagem do layout no fundo da tela
+    //
+    background-image: url(images/layout.jpg);
+    background-size: 64%;
+    background-position: 44% 0%;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,18 @@
+.sidebar{
+    height: 100vh;
+
+    img{
+        width: 150px;
+        margin-top: 50px;
+    }
+
+    ul{
+        font-size: $size-15;
+        list-style-type: none;
+        padding-left: 110px;
+
+        li{
+            margin: 23px 0;
+        }
+    }
+}

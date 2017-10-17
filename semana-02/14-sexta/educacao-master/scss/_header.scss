@@ -1,0 +1,59 @@
+.main{
+  padding-top: 29px;
+
+  .botao-sair{
+    font-size: $size-16;
+
+    p{
+      cursor: pointer;
+      margin-right: 14px;
+
+      .oi{
+        margin-right: 4px;
+      }
+    }
+  }
+
+  .linha-infos{
+    p{
+      margin-bottom: 0;
+      color: $blue;
+      font-weight: bold;
+
+      &.subtitle{
+        font-size: $size-14;
+        color: $gray;
+        font-weight: normal;
+      }
+    }
+
+    input{
+      border: 0;
+      background-color: $light-gray;
+      color: $dark-gray;
+      border-radius: 20px;
+      font-size: $size-16;
+      padding: 10px 15px;
+    }
+
+    .oi.oi-magnifying-glass{
+      margin-left: -34px;
+      color: $yellow;
+    }
+
+    .oi.oi-envelope-closed{
+      color: white;
+      background-color: $purple;
+      border-radius: 100%;
+      width: 37px;
+      height: 37px;
+      padding-left: 9px;
+      padding-top: 9px;
+      font-size: 18px;
+    }
+
+    img{
+      width: 100%;
+    }
+  }
+}
