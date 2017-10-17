@@ -16,6 +16,15 @@ Aqui você irá encontrar todos os códigos realizados em sala de aula como refe
 
 * [Roadmap com as últimas tendências em desenvolvimento web para 2017](https://github.com/kamranahmedse/developer-roadmap)
 
+### Para estudar...
+
+* [W3C Schools](https://www.w3schools.com/)
+
+* [Code Schools](https://www.codeschool.com/)
+
+* [Code Academy](https://www.codecademy.com/)
+
+
 ### Plugins para o Atom
 
 * **atom-beautify**
