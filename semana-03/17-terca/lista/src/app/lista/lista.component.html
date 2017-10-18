@@ -1,0 +1,10 @@
+<p>
+{{contador}}
+</p>
+
+<button (click)="adicionarContagem()">Clique aqui para adicionar um número acima</button>
+
+<ul *ngFor="let item of lista">
+  <li>{{item.produto}}</li>
+  <li>{{item.quantidade}}</li>
+</ul>

@@ -1,0 +1,11 @@
+nav {
+  background-color: blue;
+}
+
+span {
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 3rem;
+  padding: 1rem;
+}
