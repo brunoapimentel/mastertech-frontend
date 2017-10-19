@@ -1,0 +1,13 @@
+@import "../assets/scss/cores";
+
+nav {
+  background-color: $azul;
+  padding: 10px 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+span {
+  font-size: 24px;
+  color: white;
+}

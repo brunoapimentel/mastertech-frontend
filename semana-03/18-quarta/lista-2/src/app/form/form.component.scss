@@ -1,0 +1,26 @@
+@import "../../assets/scss/cores";
+
+:host {
+  padding: 20px 10% 0;
+  display: block;
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input {
+  font-size: 32px;
+  height: 40px;
+  width: 80%;
+  border: 1px solid $cinza-claro;
+  border-radius: 5px;
+}
+
+button {
+  width: 15%;
+  height: 44px;
+  background-color: $azul;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+}

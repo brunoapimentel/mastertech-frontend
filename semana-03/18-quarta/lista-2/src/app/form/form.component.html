@@ -1,0 +1,6 @@
+<!-- Declara uma variável inputTitulo dentro do HTML -->
+<input #inputTitulo type="text">
+
+<!-- Aguarda o click para executar a função inserir(inputTitulo) -->
+<!-- O inserir(inputTitulo) dentro da função representa que o texto do input acima será passado como parâmetro para a função inserir()  -->
+<button (click)="inserir(inputTitulo)">Enviar</button>
