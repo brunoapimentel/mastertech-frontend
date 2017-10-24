@@ -1,16 +1,10 @@
 # 18 - Continuação do Angular
 
-## Angular Basico
+## Angular
 
-Iniciando os conceitos de Angular
+- Serviços e comunicação entre componentes: https://angular.io/guide/component-interaction#parent-and-children-communicate-via-a-service
 
-## NPM
-
-* Instala as dependencias do projeto
-
-  `npm install`
-
-## Comandos no Angular
+## Comandos no Angular (referência)
 
 * Cria um Componente
 
