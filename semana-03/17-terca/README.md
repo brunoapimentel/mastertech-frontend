@@ -1,10 +1,18 @@
 # 17 - Angular
 
-### Angular Basico
+## Angular Básico
+Documentação oficial: https://angular.io/
 
-Iniciando os conceitos de Angular
+- Arquitetura do Angular: https://angular.io/guide/architecture
+- Módulos
+- Criar e utilizar componentes
+- Diretivas: ngFor
+- Eventos: click
 
 ## Angular CLI
+Programa de terminal que cria e gerencia aplicações Angular
+
+### Referência de comandos
 
 * Instala o Angular CLI
 
@@ -17,8 +25,6 @@ Iniciando os conceitos de Angular
 * Inicia o ambiente de desenvolvimento
 
   `ng serve`
-
-## Comandos no Angular
 
 * Cria um Componente
 

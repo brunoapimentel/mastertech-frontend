@@ -1,6 +1,6 @@
 # 18 - Continuação do Angular
 
-### Angular Basico
+## Angular Basico
 
 Iniciando os conceitos de Angular
 
