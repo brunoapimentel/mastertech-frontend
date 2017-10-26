@@ -1,0 +1,18 @@
+<form>
+  <input type="text" name="cep" [(ngModel)]="cep">
+  <button (click)="consultarCep()">Buscar</button>
+</form>
+
+<h2>Resultado</h2>
+<div *ngIf="resposta">
+  <p>{{resposta.logradouro}}</p>
+  <p>{{resposta.localidade}} - {{resposta.uf}}</p>
+</div>
+
+<h2>Histórico</h2>
+<div *ngFor="let item of historico">
+  <p>{{item.logradouro}}</p>
+  <p>{{item.localidade}} - {{item.uf}}</p>
+</div>
+<br>
+

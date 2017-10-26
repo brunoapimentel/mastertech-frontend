@@ -1,0 +1,5 @@
+<div [ngClass]="{tiraQuadrado: invisivel}" (click)="ocultarQuadrado()">
+  <textarea rows="4" (keydown.enter)="salvarTexto(inputTexto.value)" #inputTexto *ngIf="!texto"></textarea>
+  <p>{{texto}}</p>
+</div>
+
