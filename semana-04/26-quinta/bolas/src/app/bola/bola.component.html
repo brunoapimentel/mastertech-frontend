@@ -1,0 +1,11 @@
+<button (click)="criarBolas(bola)">Criar</button>
+
+<section>
+  <div #bola>
+
+  </div>
+  <div *ngFor="let bola of bolas"
+       (click)="virarQuadrado(bola)"
+       #bola>
+  </div>
+</section>

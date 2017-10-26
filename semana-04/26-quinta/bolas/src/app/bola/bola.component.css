@@ -1,0 +1,11 @@
+section{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div{
+  width: 150px;
+  height: 150px;
+  background-color: aquamarine;
+  border-radius: 100%;
+}
