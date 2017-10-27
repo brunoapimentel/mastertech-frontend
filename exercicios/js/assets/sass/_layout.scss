@@ -1,0 +1,46 @@
+h1 {
+  color: $redDelta;
+}
+
+#company {
+  button {
+    color: $redDelta;
+    border-color: $redDelta;
+    background-color: white;
+    box-shadow: 0 0 0 0.2rem #ffffff80;
+  }
+
+  #extraTxt {
+    display: none;
+  }
+}
+
+#services {
+  img {
+    border-radius: 50%;
+  }
+}
+
+#products {
+  h3 {
+    margin-right: 5%;
+  }
+
+  span {
+    margin: 0 2%;
+    font-size: 2rem;
+  }
+}
+
+#contact {
+  textarea {
+    resize: none;
+  }
+}
+
+#info {
+  img {
+    height: 12vh;
+    margin: 0 1%;
+  }
+}

@@ -1,0 +1,26 @@
+h1 {
+  color: #C31D13; }
+
+#company button {
+  color: #C31D13;
+  border-color: #C31D13;
+  background-color: white;
+  box-shadow: 0 0 0 0.2rem #ffffff80; }
+
+#services img {
+  border-radius: 50%; }
+
+#products h3 {
+  margin-right: 5%; }
+#products span {
+  margin: 0 2%;
+  font-size: 2rem; }
+
+#contact textarea {
+  resize: none; }
+
+#info img {
+  height: 12vh;
+  margin: 0 1%; }
+
+/*# sourceMappingURL=styles.css.map */
