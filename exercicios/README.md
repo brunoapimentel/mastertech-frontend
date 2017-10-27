@@ -1,5 +1,7 @@
 # Exercicio Guiado
 
+O Objetivo deste exercício é criar uma landingPage conforme o wireframe
+
 ## 01 Wireframe
 
 * Desenho do Wireframe
