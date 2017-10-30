@@ -32,3 +32,36 @@ for (servicesTxt of servicesTxts) {
     }
   })
 }
+
+
+//Insert Menu Items
+let menuItems = document.querySelectorAll('#main a')
+
+console.log(menuItems);
+let control = 0;
+
+for (menuItem of menuItems) {
+  let menuTxt = [
+    'Delta',
+    'Home',
+    'Empresa',
+    'Serviços',
+    'Produtos',
+    'Contato'
+  ]
+
+  let menuRef = [
+    '#',
+    '#',
+    '#company',
+    '#services',
+    '#products',
+    '#contact'
+  ]
+
+  menuItem.innerHTML = menuTxt[control];
+  menuItem.href = menuRef[control];
+
+  control++;
+
+}
