@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -14,6 +15,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 import { environment } from './../environments/environment';
 
+const routes: Routes = [
+  { path: '', component: CardsFeedComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent } 
+ ];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +34,8 @@ import { environment } from './../environments/environment';
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    AngularFireAuthModule
+    AngularFireAuthModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [],
   bootstrap: [AppComponent]

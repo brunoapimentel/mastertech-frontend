@@ -247,9 +247,21 @@ import { environment } from './../environments/environment';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-````
+```
 
-### Populando Firebase e Chamando no Angular
+## 04 Populando Firebase e Chamando no Angular
+
+---
+
+### Desafios
+
+* Criar dados na database do firebase
+
+* Importar o objeto criado no app
+
+* Injetar os items chamados no html
+
+---
 
 ### Firebase
 
@@ -389,6 +401,82 @@ Este é o código com o HTML preenchido
 </section>
 ```
 
-# TO-DO
+## 05 Rotas
 
-Create dynamic routes for angular
+---
+
+### Desafios
+
+* Importar o modulo das rotas no seu app
+
+* Configurar as rotas
+
+* Alterar os links para as rotas
+
+---
+
+Galera rota no angular4 é mega simples!!!!
+
+Então agora que toda nossa aplicação está configurada vamos linkar as páginas
+
+* A primeira coisa que precisamos fazer é importar o modulo de rotas no nosso `app.module.ts`
+
+ `import { RouterModule, Routes } from '@angular/router';`
+
+ * Agora ainda no `app.module.ts` vamos criar uma variavel que irá controlar as rotas
+
+```
+ const routes: Routes = [
+  { path: '', component: CardsFeedComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'signup', component: SignupComponent } 
+ ];
+ ```
+
+ * Ultima configuração no nosso arquivo `app.module.ts` é importar a config do modulo 
+ 
+ Para isso vamos inserir o comando abaixo dentro do nosso array imports[]
+
+ `RouterModule.forRoot(routes)`
+
+ ```
+ imports: [
+    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule,
+    RouterModule.forRoot(routes)
+  ],
+  ```
+
+  * Dentro do nosso arquivo `app.compenent.html` alteramos os injects que estão fixados pela tag
+  
+  `<router-outlet></router-outlet>`
+
+  Assim todos código que for chamado pela rota irá ser injetado dentro desta tag
+
+  * E por fim só precisamos direcionar os links de nossas páginas então ao invés de utilizar o parâmetro `href=""` vamos utilizar o `routerLink="/NOMDEDAROTA"`
+
+  ```
+  <li class="nav-item">
+    <a class="nav-link" routerLink="/signup">Signup</a>
+  </li>
+  ```
+
+## 06 Deploy
+
+---
+
+### Desafios
+
+* Exportar seu aplicativo para o ambiente de produção
+
+---
+
+Para Exportar seu app utilize o comando
+
+`ng build`
+
+Agora é só pegar o conteúdo da pasta `dist` que foi gerada e colocar em um servidor de produção!
+
+# FIM
