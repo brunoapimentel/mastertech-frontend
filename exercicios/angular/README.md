@@ -263,24 +263,28 @@ Para facilitar eu criei um arquivo `.json` que podemos importar diretamente no f
 {
     "stickers" : {
       "angular" : {
+        "id": "001",
         "description" : "Sticker do famoso framework Angular",
         "title" : "Angular",
         "url" : "https://stickers.com/angular",
         "img": "http://via.placeholder.com/350x250"
       },
       "ionic" : {
+        "id": "002",
         "description" : "A melhor plataforma de desenvolvimento hibrido",
         "title" : "Ionic",
         "url" : "https://stickers.com/ionic",
         "img": "http://via.placeholder.com/350x250"
       },
       "react" : {
+        "id": "003",
         "description" : "Simplesmente o melhor framework disponível",
         "title" : "React",
         "url" : "https://stickers.com/react",
         "img": "http://via.placeholder.com/350x250"
       },
       "vuejs" : {
+        "id": "004",
         "description" : "Um dos frameworks mais promissores da atualidade",
         "title" : "Vue.js",
         "url" : "https://stickers.com/vuejs",
