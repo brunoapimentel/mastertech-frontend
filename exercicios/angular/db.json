@@ -1,0 +1,28 @@
+{
+    "stickers" : {
+      "angular" : {
+        "description" : "Sticker do famoso framework Angular",
+        "title" : "Angular",
+        "url" : "https://stickers.com/angular",
+        "img": "http://via.placeholder.com/350x250"
+      },
+      "ionic" : {
+        "description" : "A melhor plataforma de desenvolvimento hibrido",
+        "title" : "Ionic",
+        "url" : "https://stickers.com/ionic",
+        "img": "http://via.placeholder.com/350x250"
+      },
+      "react" : {
+        "description" : "Simplesmente o melhor framework disponível",
+        "title" : "React",
+        "url" : "https://stickers.com/react",
+        "img": "http://via.placeholder.com/350x250"
+      },
+      "vuejs" : {
+        "description" : "Um dos frameworks mais promissores da atualidade",
+        "title" : "Vue.js",
+        "url" : "https://stickers.com/vuejs",
+        "img": "http://via.placeholder.com/350x250"
+      }
+    }
+}

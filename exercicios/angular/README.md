@@ -132,3 +132,259 @@ TS
 <app-login></app-login>
 <app-signup></app-signup>
 ```
+
+## 03 Importando o Firebase e Angularfire2
+
+---
+
+### Desafios
+
+* Importar as propriedades do console do firebase para o Angular
+
+* Instalar e Importar Firebase e AngularFire2 via NPM
+
+---
+
+### Firebase Console
+
+ Crie um novo projeto em `https://firebase.google.com/`
+
+ Em `Overview` clique na opção `Add Firebase to your web app`
+
+ Copie somente o objeto
+
+```
+ var config: {
+    apiKey: "[...]",
+    authDomain: "[...]",
+    databaseURL: "[...]",
+    projectId: "[...]",
+    storageBucket: "[...]",
+    messagingSenderId: "[...]"
+  }
+```
+
+E cole dentro de `environments/environment.ts` e em `environments/environment.prod.ts` alterando para o TS
+
+No final você terá algo parecido com o snippet abaixo
+
+```
+export const environment = {
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyBnI2CEGFH1Ncmx1pTFYc68Llf4s-Js5GA",
+    authDomain: "stickers-8570f.firebaseapp.com",
+    databaseURL: "https://stickers-8570f.firebaseio.com",
+    projectId: "stickers-8570f",
+    storageBucket: "stickers-8570f.appspot.com",
+    messagingSenderId: "234735253876"
+  }
+};
+```
+
+### Instalar e Importar Firebase e AngularFire2 via NPM
+
+No terminal utilize `npm install firebase angularfire2 --save` para instalar as dependencias no seu projeto
+
+No seu arquivo `app/app.module.ts` importe os modulos do Firebase e do Angularfire (Database, Auth) para o Firebase
+
+Importe também os arquivos com as chaves de acesso ao seu projeto no Firebase que foram salvos em `environments/environment.ts` e em `environments/environment.prod.ts`
+
+```
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+import { environment } from './../environments/environment';
+```
+
+E em `imports`
+
+```
+ imports: [
+    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
+  ],
+```
+
+O seu arquivo `app.module.ts` ficará parecido com o código abaixo
+
+```
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { CardsFeedComponent } from './cards-feed/cards-feed.component';
+import { CardsDetailComponent } from './cards-detail/cards-detail.component';
+import { CardsNavbarComponent } from './cards-navbar/cards-navbar.component';
+
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+
+import { environment } from './../environments/environment';
+
+@NgModule({
+  declarations: [
+    AppComponent,
+    LoginComponent,
+    SignupComponent,
+    CardsFeedComponent,
+    CardsDetailComponent,
+    CardsNavbarComponent
+  ],
+  imports: [
+    BrowserModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+````
+
+### Populando Firebase e Chamando no Angular
+
+### Firebase
+
+Para que as informações sejam acessadas de forma dinâmica precisamos primeiro preencher nosso banco de dados no firebase e depois indicar para a nossa aplicação quais dados ela deve exibir
+
+* Populando o Firebase
+
+Para facilitar eu criei um arquivo `.json` que podemos importar diretamente no firebase, você também pode criar manualmente na database do seu projeto
+
+````
+{
+    "stickers" : {
+      "angular" : {
+        "description" : "Sticker do famoso framework Angular",
+        "title" : "Angular",
+        "url" : "https://stickers.com/angular",
+        "img": "http://via.placeholder.com/350x250"
+      },
+      "ionic" : {
+        "description" : "A melhor plataforma de desenvolvimento hibrido",
+        "title" : "Ionic",
+        "url" : "https://stickers.com/ionic",
+        "img": "http://via.placeholder.com/350x250"
+      },
+      "react" : {
+        "description" : "Simplesmente o melhor framework disponível",
+        "title" : "React",
+        "url" : "https://stickers.com/react",
+        "img": "http://via.placeholder.com/350x250"
+      },
+      "vuejs" : {
+        "description" : "Um dos frameworks mais promissores da atualidade",
+        "title" : "Vue.js",
+        "url" : "https://stickers.com/vuejs",
+        "img": "http://via.placeholder.com/350x250"
+      }
+    }
+}
+````
+
+### TS 
+
+Agora precisamos falar para o `.ts` do componente quais dados eles vai utilizar do firebase
+
+* Importamos o angularfire2 e o observable
+
+````
+import { AngularFireDatabase } from 'angularfire2/database'; 
+import { Observable } from 'rxjs/Observable';
+````
+
+* Dentro da class criamos o objeto que será observado
+
+```
+export class CardsFeedComponent implements OnInit {
+feedObservable: Observable<any[]>;
+  constructor(private db: AngularFireDatabase) { }
+```
+
+* Ao iniciar passamos a referencia do banco de dados do firebase que será observada
+
+```
+  ngOnInit() {
+    this.feedObservable = this.getCards('/stickers');
+  }
+```
+
+* E por fim chamamos os dados do firebase
+
+```
+  getCards(listPath): Observable<any[]> {
+    return this.db.list(listPath).valueChanges();  
+}
+```
+
+No final seu arquivo `.ts` ficará parecido com o código abaixo
+
+```
+import { Component, OnInit } from '@angular/core';
+import { AngularFireDatabase } from 'angularfire2/database'; 
+import { Observable } from 'rxjs/Observable';
+
+@Component({
+  selector: 'app-cards-feed',
+  templateUrl: './cards-feed.component.html',
+  styleUrls: ['./cards-feed.component.scss']
+})
+export class CardsFeedComponent implements OnInit {
+feedObservable: Observable<any[]>;
+  constructor(private db: AngularFireDatabase) { }
+
+  ngOnInit() {
+    this.feedObservable = this.getCards('/stickers');
+  }
+
+  getCards(listPath): Observable<any[]> {
+    return this.db.list(listPath).valueChanges();  
+
+}
+
+}
+```
+
+### HTML
+
+Por fim precisamos referenciar essas informações no HTML do nosso componente
+
+Utilize então o `*ngFor` que se comporta como um `for of` buscando todos os itens no Objeto criado no `.ts` e atibuindo na variavel que iremos iniciar, nesse caso chamamos de `item`
+
+`*ngFor="let item of feedObservable | async"`
+
+E finalmente inserimos o nome do dado dentro do objeto que queremos exibir dentro do código 
+
+`{{item.NOMEDACHAVE}}`
+
+Este é o código com o HTML preenchido
+
+```
+<section class="container">
+  <h1 class="text-center">Main Feed</h1>
+    <div class="row text-center">
+        <div class="col-xs-12 col-md-4 d-flex justify-content-center mt-3" *ngFor="let item of feedObservable | async">
+          <div class="card" style="width: 20rem;">
+            <img class="card-img-top" src="{{item.img}}" alt="Card image cap">
+            <div class="card-body">
+              <h4 class="card-title">{{item.title}}</h4>
+              <p class="card-text">{{item.description}}</p>
+              <a href="{{item.url}}" class="btn btn-primary">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+```
+
+# TO-DO
+
+Create dynamic routes for angular
